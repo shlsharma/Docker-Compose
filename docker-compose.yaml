@@ -1,0 +1,9 @@
+services:
+  web:
+    build: . # build context where my docker files are present . means current directory
+    ports:
+      - "8000:5000"
+    #command: flask run
+
+  redis:
+    image: "redis:alpine"
